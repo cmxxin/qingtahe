@@ -1,0 +1,24 @@
+body{background: #fff;}
+.main{ padding-bottom: 50px}
+.sponsor{ text-align: center; font-size: 15px; padding-bottom: 20px}
+.sponsor .img{ width: 100%; padding-top: 30px}
+.sponsor .img img{ width: 60px; height: 60px; border-radius: 30px; }
+.sponsor p{ padding: 0 20px; margin-top: 10px; color: #130100;}
+.sponsor h3{ padding: 0 20px; padding: 5px 0 15px; color: #ab4f46 }
+.sponsor b{ color: #240201;  }
+.sponsor small{ color: #aeaeae; font-size: 12px}
+
+.list{ border-top: 1px solid #e5e1de; }
+.list li{ height: 46px;  line-height: 45px; overflow: hidden; padding: 0 5px 0 10px }
+.list li a{ display: block}
+.list li p{border-top: 1px solid #e5e1de; margin-left: 30px;}
+.list li:first-child p{ border-top: 0 none; }
+.list li .item{ float: left;}
+.list li .item input{ display: none}
+.list li .item .icon{ font-size: 16px; width: 16px; height: 16px; overflow: hidden;  border-radius: 8px}
+.list li .item .icon-select{ color: #e5e1de; }
+.list li .item .icon-selected{ color: #66cc52;  }
+
+footer{ width: 100%; height: 46px; border-top: 1px solid #e5e1de; background: #f8f3f0; position: fixed; bottom: 0; left: 0; padding: 5px 10px; text-align: right}
+footer a{ display: inline-block; background: #f4efeb; width: 80px; height: 36px; border-radius: 5px; color: #fff; font-weight: 700; font-size: 15px; text-align: center; line-height: 34px; letter-spacing: 1px}
+footer a.ready{ background: #8d614e }

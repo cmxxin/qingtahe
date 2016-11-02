@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="drink">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>我请的咖啡</title>
+    <link type="text/css" rel="stylesheet" href="static/styles/common.css">
+    <link type="text/css" rel="stylesheet" href="static/styles/animate.css">
+    <link type="text/css" rel="stylesheet" href="static/styles/order.css">
+    <script type="text/javascript" src="static/scripts/zepto.min.js"></script>
+    <script type="text/javascript" src="static/scripts/order.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <nav>
+        <a href="javascript:;" class="cur">请的咖啡</a>
+        <a href="javascript:;">领的咖啡</a>
+      </nav>
+      <div id="orderList">
+        <div class="list toload">
+          <div class="loading hide" data-type="0">
+            <i class="icon-loading"></i>
+            努力加载ing...
+          </div>
+        </div>
+        <div class="list toload hide">
+          <div class="loading hide" data-type="1">
+            <i class="icon-loading"></i>
+            努力加载ing...
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

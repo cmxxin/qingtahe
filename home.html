@@ -1,0 +1,14 @@
+
+<div class="item-list">
+  <div ng-repeat="item in list" class="item"><a ui-sref="detail({pid: item.id})">
+      <div class="i-body">
+        <div class="p-info">
+          <h3 ng-bind="item.title"></h3>
+          <p ng-bind="item.subTit"></p>
+        </div>
+        <div class="p-img"><img ng-src="{{item.img}}"/></div>
+      </div>
+      <div class="i-footer"><span ng-bind="item.name"></span><b ng-bind="item.price | toPrice"></b></div></a></div>
+  <div ng-show="loading.show" data-page="{{page}}" data-loaded="{{loaded}}" data-loading="{{ isloading }}" class="loading"><i class="icon-loading"></i>努力加载ing...</div>
+  <div class="know"><a href="/qa.html"><i class="icon icon-wenhao"></i>购买须知</a></div>
+</div>

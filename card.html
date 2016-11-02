@@ -1,0 +1,50 @@
+
+<form id="form" action="{{payUrl}}" method="GET">
+  <div class="card-box">
+    <div id="slider" class="slider">
+      <ul>
+        <li ng-repeat="item in data.imgList" on-repeat-finish="on-repeat-finish" data-name="{{item.name}}" data-id="{{item.id}}"><img ng-src="{{item.imgUrl}}" alt=""/></li>
+      </ul>
+    </div>
+    <div class="control-box">
+      <p>Mua~</p><a href="javascript:;" data-type='1' class="move m-left"><i data-type='1' class="icon icon-left"></i></a><a href="javascript:;" data-type='2' class="move m-right"><i data-type='2' class="icon icon-right"></i></a>
+    </div>
+    <div class="input-box">
+      <input type="hidden" id="pid" name="pid" value="{{data.pid}}"/>
+      <input type="hidden" id="qty" name="qty" value="{{data.qty}}"/>
+      <input type="hidden" id="cardId" name="cardId"/>
+      <input type="text" id="who" name="who" maxlength="8" placeholder="姓名、昵称"/>
+      <textarea id="msg" name="msg" rows="5" maxlength="34" placeholder="{{data.msgTips}}"></textarea>
+      <p ng-bind="data.author"></p>
+    </div>
+  </div>
+  <footer>
+    <div class="amount"><span ng-bind="data.name"> </span><b ng-bind="data.qty"></b>份<strong ng-bind="data.amount | number:2 | toPrice"></strong></div><a href="javascript:;" ng-click="confirm()">去支付</a>
+  </footer>
+  <div id="layout" ng-show="goToPay" ng-click="closeBox()"></div>
+  <div id="confirm-box" ng-show="goToPay">
+    <div class="c-header"><a href="javascript:;" ng-click="closeBox()"><i class="icon icon-close"></i></a>
+      <h3>确认支付</h3>
+    </div>
+    <div class="c-body">
+      <dl>
+        <dt>
+          <label>真爱特供</label><span>X1</span>
+        </dt>
+        <dd>
+          <label>商品金额：</label><span ng-bind="data.amount | number:2 | toPrice"></span>
+        </dd>
+        <dd>
+          <label>优惠金额：</label><span>-<em ng-bind="data.discount | number:2 | toPrice"> </em></span>
+        </dd>
+        <dd>
+          <label>总支付额：</label><span ng-bind="data.amount-data.discount | number:2 | toPrice"></span>
+        </dd>
+      </dl>
+    </div>
+    <div class="c-footer"><a href="javascript:;" ng-click="closeBox()">取消</a><a href="javascript:;" ng-click="pay()">微信支付</a></div>
+  </div>
+</form>
+<div id="loading" ng-show="msg"><span class="fail"></span>
+  <p>商品不存在<em>3</em>秒后返回首页</p>
+</div>

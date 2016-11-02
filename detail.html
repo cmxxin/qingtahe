@@ -1,0 +1,27 @@
+
+<div ng-show="!msg" class="wrap">
+  <div class="detail">
+    <div class="tips">
+      <div class="brand"><img ng-src="{{ data.brandImg }}" alt=""/></div>
+      <div class="msg">收礼人可任选以下 <span ng-bind="data.brand"></span>饮品享用</div>
+    </div>
+    <div class="choose-list">
+      <h3><i class="icon icon-coffee"></i><span ng-bind="data.name"></span><span ng-bind="data.price | toPrice"></span> / <em ng-bind="data.unit"></em></h3>
+      <div class="list"><span ng-repeat="item in data.list" ng-bind="item"></span></div>
+    </div>
+  </div>
+  <div class="qty"><span ng-bind="data.name"></span><em>X</em>
+    <input value="{{data.qty}}" disabled="disabled"/><a href="javascript:;" ng-click="minus()" class="minus"><i class="icon icon-minus"></i></a><a href="javascript:;" ng-click="add()" class="add"><i class="icon icon-add"></i></a>
+  </div>
+  <div class="total">
+    <p><strong ng-bind="data.price*data.qty | number:2 | toPrice"></strong></p>
+    <p>包含配送费</p>
+  </div>
+  <div class="card">
+    <p>选好咖啡，去填写您的心意卡片吧~</p><a ui-sref="card({pid: data.pid, qty:data.qty})">写心意卡</a>
+  </div>
+  <div class="know i-dt"><a href="/qa.html"><i class="icon icon-wenhao"></i><span>部份地区可配送，点击查看请确认您的朋友在服务范围哦</span></a></div>
+</div>
+<div id="loading" ng-show="msg"><span class="fail"></span>
+  <p>商品不存在<em>3</em>秒后返回首页</p>
+</div>

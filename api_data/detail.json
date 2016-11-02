@@ -1,0 +1,11 @@
+{
+	"pid":1,
+	"brand":"Coffee Box",
+	"brandImg": "static/images/test/coffeebox.png",
+	"name": "真爱特供",
+	"price": "36",
+	"list":["美式咖啡", "拿铁", "摩卡", "热巧克力", "香草拿铁", "焦糖拿铁", "雪昔系列"],
+	"qty": 1,
+	"unit": "盒",
+	"status": true
+}

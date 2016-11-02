@@ -1,0 +1,44 @@
+.box{ background: #fff; margin-top: 13px; border-top: 1px solid #e4dad5; border-bottom: 1px solid #e7e2df; padding: 15px 25px 15px 10px; font-size: 15px; color: #64484a}
+.box a{ display: block; }
+.box a.address{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.box p{ padding: 4px 0 }
+.box p span{ float: right; }
+.box p strong{ float: right; color: #b23b33; font-weight: 500; }
+.box p b{ font-weight: 500; margin-right: 10px; vertical-align: middle;}
+.box p .icon{ color: #75706f; }
+.box small{ color: #bc524b; }
+.box select{ position: absolute; width: 100%; height: 100%; display: block; position: absolute; left: 0; top: 0; opacity: 0 }
+
+.tips{ padding: 13px 10px; width: 100%; }
+.tips textarea{ width: 100%; border-radius: 5px; border: 0 none; background: #fff; font-size: 13px; padding: 8px; }
+
+.submit{ display: block; height: 40px; margin: 0 10px; text-align: center; background: #8d614e; border-radius: 5px; line-height: 40px; color: #fff; font-size: 15px}
+
+.has-arrow,
+.has-choose{ position: relative; }
+.has-arrow:after{ content: ""; position: absolute; right: 10px; top: 50%; margin-top: -5px; width: 10px; height: 10px; border: 1px solid #919191; border-bottom: 0; border-left: none; transform: rotate(45deg); }
+.has-choose:after{ font-family:"iconfont" !important; font-size:22px; font-style:normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; vertical-align: middle;content: "\e60c";  position: absolute; right: 10px; top: 50%; margin-top: -11px; color: #fc8427;}
+
+.layout{ position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0, .4); animation: fadeIn .1s both ease-in; z-index: 1}
+.layout.hide{ animation: fadeOut .1s both ease-in}
+.tips-box{width: 88%; max-width: 550px; margin: 60px auto 0; background: #f0e7e4; position: absolute; top: 50px; left: 0; right: 0; text-align: center; border-radius: 5px; padding-bottom: 10px; animation: fadeIn .2s both ease-in; z-index: 2}
+.tips-box.hide{ animation: fadeOut .1s both ease-in}
+.m-thead{ height: 41px; line-height: 40px; border-bottom: 1px solid #ccc}
+.m-thead .close{ display: block; position: absolute; right: 0; top: 0; width: 30px; height: 30px; color: #d6c4c0; font-size: 18px}
+.m-tbody{ padding: 20px 20px 10px; font-size: 14px;}
+.m-tbody input{ width: 100%; height: 34px; border-radius: 5px; border: 1px solid #ccc; padding:3px 10px; position: relative;}
+.m-tbody textarea{ width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; position: relative;}
+.m-tfoot{ border-top: 1px solid #ccc; margin-top: 10px}
+.m-tfoot .save{ display: block; margin: 10px 20px 0; height: 40px; background: #8c6150; border-radius: 5px;  color: #fff; font-size: 15px; font-weight: 700; line-height: 40px; letter-spacing: 2px }
+
+@keyframes fadeIn
+{
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
+
+@keyframes fadeOut
+{
+	0%   {opacity: 1}
+	100% {opacity: 0}
+}

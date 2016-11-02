@@ -1,0 +1,15 @@
+body{ background: #fff;}
+.main{ width: 100%; max-width: 640px; margin: 0 auto }
+.sponsor-img{ width: 100%; text-align: center; margin-top: 20px }
+.sponsor-img img{ width: 60px; height: 60px; width: 60px; height: 60px; border-radius: 30px; }
+.main h2{ padding: 0 20px; font-size: 20px; font-weight: 700; color: #44210e; text-align: center; margin-top: 10px}
+
+.card{ margin: 20px 20px 0 20px; padding: 20px; background: #f0e7e4; position: relative;}
+.card img{ width: 100%; box-shadow: 0 7px 25px rgba(0, 0, 0, .3)}
+.card .msg{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; padding: 20px; color: #383939}
+.msg h5{ margin: 25px 20px 20px 46px; background: url(../images/to.png) 0 6px no-repeat; background-size: 24px auto; padding-left: 30px }
+.msg p{ padding-left: 76px; }
+.msg b{ position: absolute; width: 100%; text-align: right; bottom: 50px; left: 0; padding: 0 80px 0 20px}
+
+.operation p{ border-top: 1px solid #e9dcd6; border-bottom: 1px solid #e9dcd6; height: 54px; line-height: 52px; text-align: center; padding:0 20px; font-size: 15px; color: #9a7462}
+.operation a{ width: 88%; text-align: center; line-height: 44px; height: 44px; border-radius: 5px; display: block; background: #8d614e; margin: 16px auto 0; color: #fff; font-size: 15px }

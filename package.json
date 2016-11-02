@@ -1,0 +1,17 @@
+{
+  "name": "qingtahe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cmax",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "http": "0.0.0",
+    "st": "^1.2.0"
+  }
+}

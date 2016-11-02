@@ -1,0 +1,24 @@
+.main{ width: 100%; max-width: 640px; margin: 0 auto 50px; padding-top: 10px; background: #fff; padding-bottom: 80px}
+.sponsor-img{ width: 100%; text-align: center; margin-top: 20px }
+.sponsor-img img{ width: 60px; height: 60px; height: 60px; border-radius: 30px; }
+.main h2{ padding: 0 20px; font-size: 20px; font-weight: 700; color: #44210e; text-align: center; margin-top: 10px}
+
+.card{ margin: 20px 20px 0 20px; padding: 20px; background: #f0e7e4; position: relative;}
+.card img{ width: 100%; box-shadow: 0 7px 25px rgba(0, 0, 0, .3)}
+.card .msg{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; padding: 20px; color: #383939}
+.msg h5{ margin: 25px 20px 20px 46px; background: url(../images/to.png) 0 6px no-repeat; background-size: 24px auto; padding-left: 30px }
+.msg p{ padding-left: 76px; }
+.msg b{ position: absolute; width: 100%; text-align: right; bottom: 50px; left: 0; padding: 0 80px 0 20px}
+
+.use{ width: 100%; border-top: 1px solid #e9dcd6; border-bottom: 1px solid #e9dcd6; padding: 20px; min-height: 100px}
+.use img{ float: left; width: 60px; height: 60px; border-radius: 30px;}
+.use dl{ padding-left: 80px }
+.use dl dt{ float: left; width: 70%; overflow: hidden;}
+.use dl dt b{ font-weight: 500; color: #000; padding-top: 5px; display: inline-block;}
+.use dl dt span{ display: inline-block; padding-top: 10px; color: #696969 }
+.use dl dd{ float: right; width: 30%; overflow: hidden; text-align: right; font-weight: 700; padding-top: 5px; color: #000000}
+
+footer{ width: 100%; height: 46px; position: fixed; bottom: 0; left: 0; background: #f8f3f0; border-top: 1px solid #d9c9c9; padding: 6px 10px}
+footer a{ width: 100px; height: 34px; background: #8c6151; display: block; border-radius: 5px; border: 1px solid #754b39; color: #fff; line-height: 32px; text-align: center; }
+footer .keep{ float: left; }
+footer .use-now{ float: right; }

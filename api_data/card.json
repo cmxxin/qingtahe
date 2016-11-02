@@ -1,0 +1,16 @@
+{
+	"pid":"15",
+	"name":"真爱特供",
+	"qty":"3",
+	"msgTips": "咖啡就是人生，苦与甜都包含其中。",
+	"imgList":[
+		{"id":"1", "imgUrl": "static/images/test/card2.jpg", "name": "Mua~"},
+		{"id":"2", "imgUrl": "static/images/test/card1.jpg", "name": "Eyes on you"},
+		{"id":"3", "imgUrl": "static/images/test/card3.jpg", "name": "Happy Birthday"},
+		{"id":"4", "imgUrl": "static/images/test/card4.jpg", "name": "Letter"}
+	],
+	"discount":"0",
+	"amount":"108",
+	"author":"大眼猫",
+	"status":true
+}

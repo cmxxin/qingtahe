@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="drink">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>选咖啡</title>
+    <link type="text/css" rel="stylesheet" href="static/styles/common.css">
+    <link type="text/css" rel="stylesheet" href="static/styles/choose_coffee.css">
+    <script type="text/javascript" src="static/scripts/zepto.min.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="sponsor">
+        <div class="img">
+          <img src="static/images/test/erdong.png" alt="">
+        </div>
+        <p>大眼猫请喝咖啡</p>
+        <h3>工作顺利，心想事成</h3>
+        <b>真爱特供 x 1</b><br>
+        <small>请选择您中意的一款享用</small>
+      </div>
+      <form action="pay.html" method="GET" id="aaa">
+      <div class="list">
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-selected"></i>
+                <input type="radio" name="radio" value="1">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="2">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="3">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="4">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="5">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="6">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="7">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="8">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="item">
+                <i class="icon icon-select"></i>
+                <input type="radio" name="radio" value="9">
+              </div>
+              <p>热拿铁</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </form>
+    </section>
+
+    <footer>
+      <a href="javascript:;" class="ready">选好了</a>
+    </footer>
+
+  </body>
+<script type="text/javascript">
+  $(function(){
+    $('.list').on('click', 'a', function(){
+      var obj = $(this),
+          radio = $(this).find('input'),
+          icon = $(this).find('.icon'),
+          style = "icon icon-select";
+      radio.prop('checked', true)
+
+      $('.list li').each(function() {
+        $(this).find('.icon').attr('class', style);
+      });
+
+      icon.attr('class','icon icon-selected');
+    })
+  })
+</script>
+</html>

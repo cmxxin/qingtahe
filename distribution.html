@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="drink">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>输入配送信息</title>
+    <link type="text/css" rel="stylesheet" href="static/styles/common.css">
+    <link type="text/css" rel="stylesheet" href="static/styles/distribution.css">
+    <link type="text/css" rel="stylesheet" href="static/styles/animate.css">
+    <script type="text/javascript" src="static/scripts/zepto.min.js"></script>
+    <script type="text/javascript" src="static/scripts/distribution.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="box has-arrow">
+        <a href="javascript:;">
+          <p>真爱特供 x 1 <strong>热巧克力</strong></p>
+        </a>
+      </div>
+
+      <div class="box has-arrow">
+        <a href="javascript:;" class="adr">
+          <p>
+            <i class="icon icon-user"></i><b>Pony</b>
+            <i class="icon icon-phone"></i><b class="phone">13922311789</b>
+          </p>
+          <p class="address">广州冼村路11号保利威座北塔1007</p>
+        </a>
+      </div>
+
+      <div class="box has-arrow">
+        <p>送达日期 <span>请选择预约日期</span></p>
+        <select name="" id="">
+          <option value="0">今天</option>
+          <option value="1">明天</option>
+        </select>
+      </div>
+      
+      <div class="box has-arrow">
+        <p>送达时间 <span>请选择预约时间</span></p>
+        <select name="" id="">
+          <option value="0">尽快送达</option>
+          <option value="1">10：00</option>
+          <option value="1">11：00</option>
+          <option value="1">12：00</option>
+          <option value="1">13：00</option>
+          <option value="1">14：00</option>
+        </select>
+      </div>
+
+      <div class="box has-choose">
+        <p>签收码收货</p>
+        <small>确保小哥将咖啡准确无误送达您手中</small>
+      </div>
+
+      <div class="tips">
+        <textarea name="" id="" rows="3" placeholder="有特殊要求在这里备注（请客单关于加浓度、换咖啡等涉及费用的要求我们暂时不受理哦）"></textarea>
+      </div>
+      
+      <a href="javascript:;" class="submit">填好了，快点送过来吧</a>
+    </section>
+
+    <aside>
+      <div class="layout hide"></div>
+      <div class="tips-box hide">
+        <div class="m-thead">
+          <h4>填写信息</h4>
+          <a href="javascript:;" class="close">
+            <i class="icon icon-close"></i>
+          </a>
+        </div>
+        <div class="m-tbody">
+          <input type="text" placeholder="请填写联系电话" id="phone" name="phone">
+          <textarea rows="2" id="address" name="address" placeholder="请填写详细收货地址"></textarea>
+        </div>
+        <div class="m-tfoot">
+          <a href="javascript:;" class="save">确定</a>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

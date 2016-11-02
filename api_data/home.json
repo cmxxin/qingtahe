@@ -1,0 +1,10 @@
+{
+	"list":[
+		{"id": 1, "title": "Coffee Box 真爱特供", "subTit": "暖心咖啡抢先体验，北上广部分地区可送", "img": "static/images/test/p1.png", "name": "HH真爱特供", "price":"36"},
+		{"id": 2, "title": "Coffee Box 真爱特供", "subTit": "2杯咖啡暖手暖心~北上广部分地区可送", "img": "static/images/test/p2.png", "name": "CC真爱特供", "price":"46"},
+		{"id": 3, "title": "Coffee Box 真爱特供", "subTit": "3杯咖啡暖手暖心暖丁丁~北上广部分地区可送", "img": "static/images/test/p3.png", "name": "SS真爱特供", "price":"56"},
+		{"id": 4, "title": "Coffee Box 真爱特供", "subTit": "3杯咖啡暖手暖心暖丁丁~北上广部分地区可送", "img": "static/images/test/p3.png", "name": "SS真爱特供", "price":"56"},
+		{"id": 5, "title": "Coffee Box 真爱特供", "subTit": "4杯咖啡暖手暖心暖丁丁暖咪咪~北上广部分地区可送", "img": "static/images/test/p1.png", "name": "PD真爱特供", "price":"66"}
+	],
+	"pageCount":2
+}
